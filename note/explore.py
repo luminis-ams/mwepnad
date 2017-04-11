@@ -285,7 +285,7 @@ df.loc[df['NR'] == 1, :]
 
 # <codecell>
 
-print([doc for doc in first_query.docs if doc.id == '029'][0].text)
+print(re.sub(r'\n\n+', '\n\n', [doc for doc in first_query.docs if doc.id == '029'][0].text)[:500])
 
 # <markdowncell>
 
@@ -293,11 +293,11 @@ print([doc for doc in first_query.docs if doc.id == '029'][0].text)
 
 # <codecell>
 
-print([doc for doc in first_query.docs if doc.id == '024'][0].text)
+print(re.sub(r'\n\n+', '\n\n', [doc for doc in first_query.docs if doc.id == '024'][0].text)[:500])
 
 # <markdowncell>
 
-# The above page seems to refer mainly to an event that is named after one Paul Ehrlich.
+# The above page seems to refer mainly to an event / network that is named after one Paul Ehrlich.
 
 # <markdowncell>
 
