@@ -12,12 +12,15 @@ the training queries.
 
 ## Install
 
-You can use `conda` or `pip`. To see which Python packages were used,
-check out the file `./environment.yml` in this repository.
+You can use `conda` or `pip`. To see which Python versions of various packages
+were used, check out the file `./environment.yml` in this repository.
+
+You can also install the packages `numpy`, `pandas`, `scikit-learn`, `ntlk` and
+`jupyter` by hand and hope the versions will not be too different.
 
 One of the packages installed with `conda` was Jupyter Notebook. Run
 it from the directory in which you have put this repository (so one
-directory level above this repository).
+directory level above this repository, the command is `jupyter notebook`).
 
 Next to this repository, the Notebook assumes you will have a directory
 `data`, with a directory structure like this:
