@@ -80,7 +80,7 @@ language_e = root.find('{http://www.example.org/metadata-corpus}language')
 
 # <codecell>
 
-root.find('{}url'.format(Document.XMLNS)).text
+root.find('{http://www.example.org/metadata-corpus}url').text
 
 # <codecell>
 
